@@ -10,7 +10,6 @@ Bu proje, kullanıcılara "Problem mi var?" sorusunu soran ve cevaplarına göre
 - **Yeşil Geçiş**: Sonuç sayfasında arkaplan yeşile döner
 - **Zamanlı Mesajlar**: 1 saniye sonra ek mesajlar belirir
 - **Başa Dön Butonu**: Programı yeniden başlatma özelliği
-- **Ziyaretçi Sayacı**: Siteye giren kişi sayısını takip eder
 
 ## 🚀 Kullanım
 
@@ -41,14 +40,9 @@ Bu proje, kullanıcılara "Problem mi var?" sorusunu soran ve cevaplarına göre
 - HTML5
 - CSS3 (Animasyonlar ve geçişler)
 - JavaScript (ES6+)
-- LocalStorage (Ziyaretçi sayacı için)
 
-## 📊 Ziyaretçi Sayacı
 
-- Sağ üst köşede görünür
-- LocalStorage kullanarak sayıyı kaydeder
-- Her sayfa yenilemesinde artar
-- Responsive tasarım ile mobil uyumlu
+
 
 ## 🎨 Tasarım Özellikleri
 
@@ -75,6 +69,4 @@ Projeyi GitHub Pages'te yayınlayabilir veya doğrudan `index.html` dosyasını 
 
 Bu proje MIT lisansı altında lisanslanmıştır.
 
----
-
-**Not**: Ziyaretçi sayacı LocalStorage kullanır, bu nedenle sadece aynı tarayıcıda çalışır. Farklı tarayıcılar veya cihazlar için ayrı sayaçlar tutulur. 
+ 

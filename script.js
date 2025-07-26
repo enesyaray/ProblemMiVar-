@@ -1,6 +1,7 @@
 let currentQuestion = 1;
 const totalQuestions = 2;
 let secondAnswer = null;
+let visitorCount = 0;
 
 function handleAnswer(answer) {
     if (currentQuestion === 1) {
@@ -136,8 +137,25 @@ function restartApp() {
     }
 }
 
+// Ziyaretçi sayısını yönet
+function updateVisitorCount() {
+    // LocalStorage'dan mevcut sayıyı al
+    const storedCount = localStorage.getItem('visitorCount');
+    visitorCount = storedCount ? parseInt(storedCount) : 0;
+    
+    // Sayıyı güncelle
+    visitorCount++;
+    localStorage.setItem('visitorCount', visitorCount.toString());
+    
+    // Sayfada göster
+    document.getElementById('counter-number').textContent = visitorCount;
+}
+
 // Sayfa yüklendiğinde başlangıç durumunu ayarla
 document.addEventListener('DOMContentLoaded', function() {
+    // Ziyaretçi sayısını güncelle
+    updateVisitorCount();
+    
     currentQuestion = 1;
     secondAnswer = null;
     document.body.classList.remove('green-bg');
